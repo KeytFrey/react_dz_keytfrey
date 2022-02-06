@@ -1,0 +1,10 @@
+.copyright {
+    display: flex;
+    align-items: flex-end;
+    height: 80px;
+}
+
+.year {
+    font-weight: 700;
+    color: #ff0000;
+}

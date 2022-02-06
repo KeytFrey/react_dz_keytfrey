@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.navli {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+}
+
+.navli:hover {
+    border-bottom: 1px solid #ff0000;
+}
