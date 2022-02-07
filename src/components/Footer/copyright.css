@@ -1,7 +1,6 @@
 .copyright {
     display: flex;
-    align-items: flex-end;
-    height: 80px;
+    align-items: center;
 }
 
 .year {

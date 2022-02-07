@@ -1,7 +1,7 @@
 import './header.css';
 
 import Logo from '../Logo';
-import Nav from './Nav';
+import Nav from '../Nav';
 
 function Header() {
     return (
