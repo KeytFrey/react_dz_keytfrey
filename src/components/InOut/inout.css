@@ -1,0 +1,18 @@
+button {
+    width: 25px;
+    height: 25px;
+
+    font-size: 0;
+    background: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.login {
+    background: url('/public/img/login.svg') no-repeat center center / cover;
+}
+
+.logout {
+    background: url('/public/img/logout.svg') no-repeat center center / cover;
+}

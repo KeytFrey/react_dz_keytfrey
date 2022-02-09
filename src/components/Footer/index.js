@@ -1,7 +1,7 @@
 import './footer.css';
 import './copyright.css';
 
-import Logo from '../Logo'
+import Logo from '../Logo';
 
 function Footer() {
     let year = new Date().getFullYear();
