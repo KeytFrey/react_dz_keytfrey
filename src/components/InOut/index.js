@@ -1,6 +1,7 @@
 import './inout.css';
 
 import React from 'react';
+import Modal from '../Modal';
 
 class InOut extends React.Component {
 
@@ -31,11 +32,14 @@ class InOut extends React.Component {
 
         return (
             <div>
-                {isLogin ? (
-                    <button className='logout' onClick={(e) => this.logout(e)}>Выйти</button>
-                ) : (
-                    <button className='login' onClick={(e) => this.login(e)}>Войти</button>
-                )}
+                <Modal />
+                <div>
+                    {isLogin ? (
+                        <button className='logout' onClick={(e) => this.logout(e)}>Выйти</button>
+                    ) : (
+                        <button className='login' onClick={(e) => this.login(e)}>Войти</button>
+                    )}
+                </div>
             </div>
         )
     }
