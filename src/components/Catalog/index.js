@@ -40,13 +40,13 @@ class Catalog extends React.Component {
         return (
             <div>
                 <div className="Catalog">
-                    {cars.map(car => (
-                        <Card data={car} />
+                    {cars.map((car, index) => (
+                        <Card key={index.toString()} data={car} />
                 ))}
                 </div>
                 <div className="Catalog">
-                    {cars2.map(car => (
-                        <Card data={car} />
+                    {cars2.map((car, index) => (
+                        <Card key={index.toString()} data={car}/>
                 ))}
                 </div>
             </div>

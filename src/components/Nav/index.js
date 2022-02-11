@@ -6,7 +6,7 @@ function Nav() {
     return (
         <ul className='nav'>
             {menu.map(item => (
-                <li className="navli"><a href="#">{item.name}</a></li>
+                <li className="navli" key={item.url}><a href={item.url}>{item.name}</a></li>
             ))}
         </ul>
     )

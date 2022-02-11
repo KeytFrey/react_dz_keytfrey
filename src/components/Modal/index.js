@@ -7,10 +7,10 @@ class Modal extends React.Component {
 
     render() {
         return (
-            <div class="modal" id="modal">
-                <div class="modal_content">
+            <div className="modal" id="modal">
+                <div className="modal_content">
                     <FormModal />
-                    <button class="modal__close" type="button"></button>
+                    <button className="modal__close" type="button"></button>
                 </div>
             </div>
         )
