@@ -1,5 +1,7 @@
 import './catalog.css';
-import Card from  '../Card';
+// import Card from  '../Card';
+
+import CardHocks from "../CardHocks"
 
 import React from 'react';
 
@@ -33,6 +35,18 @@ class Catalog extends React.Component {
                 )
     }
 
+    delete(index) {
+        let cars = this.state.cars
+        cars.splice(index, 1)
+        this.setState({ cars })
+    }
+
+    deletetwo(index) {
+        let cars2 = this.state.cars2
+        cars2.splice(index, 1)
+        this.setState({ cars2 })
+    }
+
     render() {
         let cars = this.state.cars
         let cars2 = this.state.cars2
@@ -41,12 +55,18 @@ class Catalog extends React.Component {
             <div>
                 <div className="Catalog">
                     {cars.map((car, index) => (
-                        <Card key={index.toString()} data={car} />
+                        <div key={car.id} >
+                            <CardHocks data={car}/>
+                            <button сlassName="btndel" onClick={() => this.delete(index)}>х</button>
+                        </div>
                 ))}
                 </div>
                 <div className="Catalog">
                     {cars2.map((car, index) => (
-                        <Card key={index.toString()} data={car}/>
+                        <div key={car.id} >
+                            <CardHocks data={car}/>
+                            <button сlassName="btndel" onClick={() => this.deletetwo(index)}>х</button>
+                        </div>
                 ))}
                 </div>
             </div>

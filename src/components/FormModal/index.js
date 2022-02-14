@@ -9,10 +9,9 @@ class FormModal extends React.Component {
             <form className="form" action="/" method="POST">
                 <input className="form__content" type="email" name="email" placeholder="Ваш e-mail"></input>
                 <input className="form__content" type="password" name="password" placeholder="Ваш пароль"></input>
-
-                <div className='form_btn'>
-                    <input className="btn" type="button" value="Войти"></input> /&nbsp;
-                    <input className="btn" type="button" value="Зарегистрироваться"></input>
+                <div className='form__btn'>
+                    <button>Войти</button> /&nbsp;
+                    <button>Зарегистрироваться</button>
                 </div>
             </form>
         )

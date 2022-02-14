@@ -32,7 +32,6 @@ class InOut extends React.Component {
 
         return (
             <div>
-                <Modal />
                 <div>
                     {isLogin ? (
                         <button className='logout' onClick={(e) => this.logout(e)}>Выйти</button>
@@ -40,6 +39,7 @@ class InOut extends React.Component {
                         <button className='login' onClick={(e) => this.login(e)}>Войти</button>
                     )}
                 </div>
+                <Modal show={isLogin} />
             </div>
         )
     }

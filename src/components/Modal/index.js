@@ -1,11 +1,9 @@
 import './modal.css';
-
-import React from 'react';
 import FormModal from '../FormModal';
 
-class Modal extends React.Component {
+function Modal ({show}) {
 
-    render() {
+    if(show) {
         return (
             <div className="modal" id="modal">
                 <div className="modal_content">
@@ -14,6 +12,9 @@ class Modal extends React.Component {
                 </div>
             </div>
         )
+    }
+    else {
+        return null;
     }
 }
 
